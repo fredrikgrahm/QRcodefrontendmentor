@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #edf2f8;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.qr-box {
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 10px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card__text h3 {
+    font-size: 20px;
+}
+
+.card__text p {
+    font-size: 15px;
+    opacity: 50%;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.card-box:nth-of-type(1){
+    grid-column: 2;
+    
+}
+
+@media(max-width: 768px) {
+    .qr-box {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
